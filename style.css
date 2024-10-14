@@ -1,0 +1,118 @@
+/* font */
+*{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+    background-color: beige;
+
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: 0;
+    color: black;
+}
+
+.core{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 0.5fr);
+}
+header{
+    background-color: brown;
+    margin: 0 30%;
+    position: relative;
+    padding: 1px 5%;
+
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    
+}
+header li{
+    font-weight: bold;
+    border-radius: 50%;
+}
+header button{
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 8px black;
+    font-size: 30px;
+}
+header button:hover{
+    background-color: black;
+    color: wheat;
+    transition: 0.5s ease-out;
+}
+header a {
+    transition: 0.5s ease-out;
+
+}
+/* header a:hover{
+    background-color: black;
+    color: white;
+} */
+.block_1:hover, .block_2:hover, .block_3:hover, .block_4:hover, .block_5:hover, .block_6:hover{
+    background-color: blue;
+}
+.block_1{
+    background-color: pink;
+    grid-area: 1 / 2 / 2 / 6;
+}
+.block_2{
+    background-color: green;
+    grid-area: 1 / 6 / 4 / 8;
+}
+.block_2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.block_3{
+    background-color: red;
+    grid-area: 2 / 2 / 2 / 5;
+}
+.block_4{
+    background-color: violet;
+    grid-area: 2 / 5 / 4 / 6 ;
+}
+.block_5{
+    background-color: orange;
+    grid-area: 3 / 2 / 6 / 5;
+}
+.block_5 ul{
+    background-color: grey;
+
+}
+.block_5 li{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block_6{
+    background-color: aqua;
+    grid-area: 4 / 5 / 6 / 8;
+}
+.logo img{
+    width: 10%;
+    height: 10%;
+    filter: grayscale(100%);
+    transition: 0.5s ease-out;
+}
+.logo img:hover{
+    filter: grayscale(0%);
+}
